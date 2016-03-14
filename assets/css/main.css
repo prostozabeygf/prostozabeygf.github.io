@@ -435,8 +435,7 @@ header.home--head {
       width: 138px;
       height: 28px;
       margin: 0 auto;
-      background-size: cover;
-      background-image: url(../img/codeformyself.png); }
+      background-size: cover; }
     header.home--head .logo .logo--text:hover {
       cursor: default; }
   header.home--head nav.top--nav ul li {
