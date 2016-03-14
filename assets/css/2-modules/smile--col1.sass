@@ -1,0 +1,115 @@
+section.smile--col1
+
+  margin-top: 20px
+  nav.cont--rubr
+    max-width: 100%
+    background-color: #fff
+    padding: 18px 20px
+    height: calc(45px - 30px)
+    +box--shadow
+    ul li
+      display: inline-block
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+      &:first-child
+        font-weight: 600
+        margin-right: 45px
+        &:hover
+          cursor: default
+      a
+        color: $dark--color
+        display: inline-block
+        &:hover
+          padding-bottom: 15px
+          border-bottom: 2px solid $dark--color
+
+
+
+  section.home--articles
+    margin-top: 20px
+    background-color: #fff
+    padding: 30px 0
+    +box--shadow
+    article.home--article
+      flex-flow: wrap
+      max-width: 525px
+      margin: 0 auto
+      margin-bottom: 25px
+      align-items: center
+      padding-bottom: 25px
+      border-bottom: 2px solid transparentize($muted, 0.5)
+      &:last-child
+        margin-bottom: 0px
+        border-bottom: none
+      .article--thumb
+        width: 250px
+        height: 185px
+        background:
+          size: cover
+          position: center
+      .article--text
+        max-width: 265px
+        a.artcta
+          font-size: 16px
+          color: $dark--color
+          transition: color 150ms ease
+          &:hover
+            color: lighten($dark--color, 20%)
+        p
+          max-height: 110px
+          overflow: hidden
+          font:
+            size: 13px
+            weight: 300
+        .art--inf
+          display: flex
+          justify-content: space-between
+          align-items: center
+          span
+            color: $muted
+            font-size: 11px
+          a.more
+            font-size: 13px
+            transition: color 150ms ease
+            &:hover
+              color: lighten($links, 10%)
+
+
+
+
+
+@media (max-width: 675px)
+  section.smile--col1
+    nav.cont--rubr
+      ul li
+        margin-right: 15px
+        &:last-child
+          margin-right: 0
+
+@media (max-width: 535px)
+  footer.home--footer
+    a.mail
+      font-size: 25px
+  section.smile--col1
+    nav.cont--rubr
+      text-align: center
+      height: 100%
+      ul li
+        margin-top: 10px
+        &:first-child
+          display: block
+          margin-top: 0px
+        a:hover
+          padding-bottom: 0
+          border-bottom: none
+    section.home--articles
+      article.home--article
+        width: 100%
+        flex-direction: column
+        .article--thumb
+          width: 100%
+        .article--text
+          text-align: center
+          padding: 10px 20px
+          max-width: 100%

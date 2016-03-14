@@ -1,0 +1,35 @@
+article.home--posts
+  header.posts--head
+    width: 100%
+    height: 300px
+    background:
+      size: cover
+      position: center
+    position: relative
+    .overlay
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0,0,0,0.5)
+    .post--info
+      position: relative
+      padding-top: 200px
+      text-align: center
+      .post--title
+        color: lighten($links, 50%)
+        font-size: 30px
+      span.date
+        display: block
+        margin-top: 10px
+        color: lighten($muted, 20%)
+  section.post--content
+    +box--shadow
+    background-color: #fff
+    min-height: 500px
+    padding: 20px 30px
+    color: $dark--color
+    font-size: 15px
+    width: 70%
+    margin: 30px auto 10px
