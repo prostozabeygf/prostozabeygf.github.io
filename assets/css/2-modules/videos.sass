@@ -1,0 +1,53 @@
+section.videos
+	align-items: flex-start
+	.video--sc
+		box-shadow: 0px 0px 2px rgba(0,0,0,0.5)
+		width: 340px
+		.video
+			width: 320px
+			padding: 10px
+			background-color: #fff
+			border-bottom: 1px solid $links--color
+			+transition
+			&:last-child
+				border-bottom: none
+			&:hover
+				background-color: transparentize($links--color, 0.5)
+			.flex-video
+				height: 0
+				overflow: hidden
+				padding-bottom: 53.5%
+				position: relative
+	.ics
+		width: 90px
+		margin-top: -1px
+		.ic, .unp, .ic--vlog
+			height: 90px
+			line-height: 145px
+			font-size: 11px
+			text-align: center
+			color: #fff
+			border-bottom: 1px solid white
+			background: 
+				repeat: no-repeat
+				position: center 15px
+				color: transparentize($links--color, 0.0)
+			border-bottom: 1px solid $accent
+			+transition
+			&:last-child
+				border-bottom: none
+			&:hover
+				cursor: pointer
+				background-color: transparentize($accent, 0.3)
+
+
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video
+	height: 100%
+	position: absolute
+	top: 0
+	width: 100%
+	left: 0
