@@ -163,17 +163,33 @@ section.portfolio
 			float: left
 			background: 
 				size: cover
-				position: center 
+				position: center
 			position: relative
 			overflow: hidden
-
+			max-height: 212.984px
+			margin-top: -3px
+			+transition
 			&:after
 				content: ''
 				display: block
-				padding-top: 65%
 			&:hover .meta 
 				opacity: 1
 				transform: scale(1)
+			.thumb-img 
+				max-height: 212.984px
+				position: relative
+				img 
+					max-width: 100%
+					height: auto
+				.to-top
+					position: relative
+					top: -60px
+				.to-top-l
+					position: relative
+					top: -20px
+				.to-top-d
+					position: relative
+					top: -120px
 			.meta
 				position: absolute
 				top: 0

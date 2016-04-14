@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	$('.thumb').magnificPopup({
+		type : 'image',
+		gallery : {
+			enabled : true
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
 $('a[href^="#"]').click(function(){
 var el = $(this).attr('href');
 $('body').animate({

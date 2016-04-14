@@ -658,6 +658,32 @@ i.i-airplane {
 i.i-books {
   background-image: url(../img/ic-r/books.png); }
 
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
 header.hero-sect {
   height: 100vh;
   background-image: url(../img/header_hbg.jpg);
@@ -820,15 +846,32 @@ section.portfolio {
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    max-height: 212.984px;
+    margin-top: -3px;
+    transition: all 0.15s ease-out 0s; }
     section.portfolio .thumbnails .thumb:after {
       content: '';
-      display: block;
-      padding-top: 65%; }
+      display: block; }
     section.portfolio .thumbnails .thumb:hover .meta {
       opacity: 1;
       -webkit-transform: scale(1);
               transform: scale(1); }
+    section.portfolio .thumbnails .thumb .thumb-img {
+      max-height: 212.984px;
+      position: relative; }
+      section.portfolio .thumbnails .thumb .thumb-img img {
+        max-width: 100%;
+        height: auto; }
+      section.portfolio .thumbnails .thumb .thumb-img .to-top {
+        position: relative;
+        top: -60px; }
+      section.portfolio .thumbnails .thumb .thumb-img .to-top-l {
+        position: relative;
+        top: -20px; }
+      section.portfolio .thumbnails .thumb .thumb-img .to-top-d {
+        position: relative;
+        top: -120px; }
     section.portfolio .thumbnails .thumb .meta {
       position: absolute;
       top: 0;
@@ -1239,3 +1282,19 @@ section.contacts {
       section.contacts .form-body input.submit-tp:hover {
         color: #906e79;
         background-color: #fff; }
+
+@media all and (max-width: 1280px) {
+  section.portfolio .thumbnails .thumb .thumb-img {
+    max-height: 209px; } }
+
+@media all and (max-width: 1270px) {
+  section.portfolio .thumbnails .thumb .thumb-img {
+    max-height: 200px; } }
+
+@media all and (max-width: 1215px) {
+  section.portfolio .thumbnails .thumb .thumb-img {
+    max-height: 190px; } }
+
+@media all and (max-width: 1156px) {
+  section.portfolio .thumbnails .thumb .thumb-img {
+    max-height: 170px; } }
