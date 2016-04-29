@@ -1,9 +1,7 @@
 @import "0-tools/bourbon/bourbon";
 @import "0-tools/normalize";
-@import "0-tools/owl";
 
 @import "1-base/vars";
 @import "1-base/base";
 
-@import "2-modules/header";
-@import "2-modules/resp";
+@import "2-modules/media";
