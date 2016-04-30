@@ -30,11 +30,11 @@
 				<div class="col-md-8 col-sm-12">
 					<!-- navigation start -->
 					<ul class="nav"> 
-						<li><a href="#about-tabs">Гостиница и номера</a></li>
-						<li><a href="#attraction">Что находится рядом</a></li>
-						<li><a href="#services">Услуги</a></li>
-						<li><a href="#prices">Цены</a></li>
-						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="#about-tabs" class="scroll-to">Гостиница и номера</a></li>
+						<li><a href="#attraction" class="scroll-to">Что находится рядом</a></li>
+						<li><a href="#services" class="scroll-to">Услуги</a></li>
+						<li><a href="#prices" class="scroll-to">Цены</a></li>
+						<li><a href="#contacts" class="scroll-to">Контакты</a></li>
 					</ul>
 					<!-- navigation end -->
 				</div>
@@ -50,19 +50,47 @@
 		</div>
 	</nav>
 	<!-- Top navigation and logo end -->
+	<!-- slider start-->
+ 
 	<section class="slider">
-		<div class="carousel" id="carousel-gen">		
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/img/city-cars-road-houses.jpg" alt="slide-item">
+    </div>
+    <div class="item">
+      <img src="assets/img/city-cars-road-houses.jpg" alt="slide-item">
+    </div>
+    <div class="item">
+      <img src="assets/img/city-cars-road-houses.jpg" alt="slide-item">
+    </div>
+  </div>
+
+  <!-- Controls --> 
+ <a href="#carousel-example-generic" class="left carousel-control" data-slide="prev">
+			<i class="fa fa-angle-left" aria-hidden="true"></i>
+		</a>
+		<a href="#carousel-example-generic" class="right carousel-control" data-slide="next">
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
+		</a>
+</div>
+
+
+	<!-- 	<div class="carousel" id="carousel-gen">		
 			<div class="item">
 				<img src="assets/img/city-cars-road-houses.jpg" alt="slide-item">
 			</div>
-			<a href="#carousel-gen" class="left carousel-control">
-				<i class="fa fa-angle-left" aria-hidden="true"></i>
-			</a>
-			<a href="#carousel-gen" class="right carousel-control">
-				<i class="fa fa-angle-right" aria-hidden="true"></i>
-			</a>
-		</div>
+		</div> -->
 </section>
+<!-- slider end -->
 </header>
 <!-- header end -->
 <div class="teaser-slider-ph"></div>
@@ -75,7 +103,7 @@
 				<div class="call-to-box text-c">
 					<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					<a href="#" class="call-to-phone">+7 (913) 693-03-23</a>
-				</div>
+				</div> 
 			</div>
 		</div>
 	</section>
@@ -245,7 +273,7 @@
 												</a>
 												<div class="room-tabs-gallery-caption flex">
 													<span>От 3800 р/ сутки</span>
-													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa"><span class="calendar"></span>Забронировать!</button>
+													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 												</div>
 											</div>
 										</div>
@@ -302,7 +330,7 @@
 												</a>
 												<div class="room-tabs-gallery-caption flex">
 													<span>От 7000 р/ сутки</span>
-													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa"><span class="calendar"></span>Забронировать!</button>
+													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 												</div>
 											</div>
 										</div>
@@ -365,7 +393,7 @@
 												</a>
 												<div class="room-tabs-gallery-caption flex">
 													<span>От 11000 р/ сутки</span>
-													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa"><span class="calendar"></span>Забронировать!</button>
+													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 												</div>
 											</div>
 										</div>
@@ -513,16 +541,16 @@
 					<div class="flex counter-hs sc-animate animated">
 						<div class="ic"><img src="assets/img/icons/bas.png" alt="icons" class="image-responsive"></div>
 						<div class="count">
-							<div class="counter-numb">6</div>
+							<div class="counter-numb" data-value="6">0</div>
 							<div class="counter-description">Бассейнов</div>
 						</div>
 					</div>
-				</div>
+				</div>  
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="flex counter-hs sc-animate-1 animated">
 						<div class="ic"><img src="assets/img/icons/globe.png" alt="icons" class="image-responsive"></div>
 						<div class="count">
-							<div class="counter-numb">10</div>
+							<div class="counter-numb" data-value="10">0</div>
 							<div class="counter-description">Стран знают о нас</div>
 						</div>
 					</div>
@@ -531,7 +559,7 @@
 					<div class="flex counter-hs sc-animate animated">
 						<div class="ic"><img src="assets/img/icons/cup.png" alt="icons" class="image-responsive"></div>
 						<div class="count" data-effect="fadeInDown">
-							<div class="counter-numb" data-value="5143">5143</div>
+							<div class="counter-numb" data-value="5143">0</div>
 							<div class="counter-description">приветственных кружки кофе</div>
 						</div>
 					</div>
@@ -837,7 +865,7 @@
 	<div class="copyrights">
 			<div class="container">
 				<div class="row"> 
-					<div class="col-md-12">&copy; 2016 Heylei Evans .Cоздание landing page </div>
+					<div class="col-md-12">&copy; Cайт разработан ADVAN</div>
 				</div>
 			</div>
 		</div>
@@ -1109,6 +1137,8 @@
 
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.animateNumber.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

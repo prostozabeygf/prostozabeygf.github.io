@@ -35,6 +35,19 @@ $(function () {
 		$(".nav").toggleClass('show-in');
 		$(".select-c").toggleClass('show-in');
 	});
+	$('.counter').waypoint(function() {
+
+        $('.counter-numb').each(function(){
+            var numberValue = $(this).data('value');
+            $(this).animateNumber({number:numberValue}, 5000);
+        });
+
+        this.destroy()
+
+    }, {
+        offset: '100%',
+        triggerOnce: true
+    });
  
 });
 
@@ -44,10 +57,23 @@ $('#myTab a').click(function (e) {
 })
 
 $(document).ready(function() {
-$('a[href^="#"]').click(function(){
-var el = $(this).attr('href');
-$('body').animate({
-scrollTop: $(el).offset().top}, 2000);
-return false;
+	$('.carousel').carousel({
+  interval: 4000,
+  pause: ""
 });
+$('body').scrollspy({target: '#navigation-top', offset: 100});
+
+ var scrollTo = $(".scroll-to");
+
+ scrollTo.on('click', function (event) {
+     $('.modal').modal('hide');
+     var position = $(document).scrollTop();
+     var scrollOffset = 100;
+
+     var marker = $(this).attr('href');
+     $('html, body').animate({scrollTop: $(marker).offset().top - scrollOffset}, 'slow');
+     return false;
+ });
+
 });
+
