@@ -1,6 +1,29 @@
 $(window).scroll(function () {
 	var st = $(this).scrollTop();
 
+	$('.form-help').each(function() {
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+600) {
+			$(this).addClass('swing');
+		}
+	});
+
+	$('.sc-animate').each(function() {
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+600) {
+			$(this).addClass('fadeInDown');
+		}
+	});
+	$('.sc-animate-1').each(function() {
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+600) {
+			$(this).addClass('fadeInUp');
+		}
+	});
+
 	$(".slider img").css({
 		"transform" : "translate(0%, -" + st /20 + "%"
 	});

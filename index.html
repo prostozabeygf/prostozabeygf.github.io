@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/0-tools/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/0-tools/animate.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -72,7 +73,7 @@
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="call-to-box text-c">
-					<button class="btn"><span class="calendar"></span>Забронировать!</button>
+					<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					<a href="#" class="call-to-phone">+7 (913) 693-03-23</a>
 				</div>
 			</div>
@@ -188,7 +189,7 @@
 												</a>
 												<div class="room-tabs-gallery-caption flex">
 													<span>От 3200 р/ сутки</span>
-													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa"><span class="calendar"></span>Забронировать!</button>
+													<button class="btn btn-room-check show-inquiry-modal" data-object="The Sea Villa" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 												</div>
 											</div>
 										</div>
@@ -509,7 +510,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="flex counter-hs">
+					<div class="flex counter-hs sc-animate animated">
 						<div class="ic"><img src="assets/img/icons/bas.png" alt="icons" class="image-responsive"></div>
 						<div class="count">
 							<div class="counter-numb">6</div>
@@ -518,7 +519,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="flex counter-hs">
+					<div class="flex counter-hs sc-animate-1 animated">
 						<div class="ic"><img src="assets/img/icons/globe.png" alt="icons" class="image-responsive"></div>
 						<div class="count">
 							<div class="counter-numb">10</div>
@@ -527,10 +528,10 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12"> 
-					<div class="flex counter-hs">
+					<div class="flex counter-hs sc-animate animated">
 						<div class="ic"><img src="assets/img/icons/cup.png" alt="icons" class="image-responsive"></div>
-						<div class="count">
-							<div class="counter-numb">5143</div>
+						<div class="count" data-effect="fadeInDown">
+							<div class="counter-numb" data-value="5143">5143</div>
 							<div class="counter-description">приветственных кружки кофе</div>
 						</div>
 					</div>
@@ -579,8 +580,8 @@
 	</section>
 	<!-- section.comments end-->
 	<!-- section.form-help start -->
-	<section class="form-help container">
-		<div class="row">
+	<section class="form-help container animated">
+		<div class="row">  
 			<div class="col-md-12">
 				<div class="form-help-thumb"><img src="assets/img/icons/phone.png" alt="phone" class="image-responsive"></div>
 			</div>
@@ -707,7 +708,7 @@
 					</div>
 					<div class="lgn">Сутки</div>
 					<div class="rate-action">
-						<button class="btn"><span class="calendar"></span>Забронировать!</button>
+						<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					</div>
 				</div>
 				<!-- price-item start -->
@@ -724,7 +725,7 @@
 					</div>
 					<div class="lgn">Сутки</div>
 					<div class="rate-action">
-						<button class="btn"><span class="calendar"></span>Забронировать!</button>
+						<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					</div>
 				</div>
 				<!-- price-item start -->
@@ -742,7 +743,7 @@
 					</div>
 					<div class="lgn">Сутки</div>
 					<div class="rate-action">
-						<button class="btn"><span class="calendar"></span>Забронировать!</button>
+						<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					</div>
 				</div>
 				<!-- price-item start -->
@@ -761,7 +762,7 @@
 					</div>
 					<div class="lgn">Сутки</div>
 					<div class="rate-action">
-						<button class="btn"><span class="calendar"></span>Забронировать!</button>
+						<button class="btn" data-toggle="modal" data-target="#inquiryModal"><span class="calendar"></span>Забронировать!</button>
 					</div>
 				</div>
 			</div>
@@ -842,6 +843,268 @@
 		</div>
 </div>
 <!-- content after slider end -->
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="inquiryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    		<form action="#" method="post" id="inquiry-form" name="inquiry-form">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Запрос на бронирование</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="room-and-date">
+	        	<div class="room-select">
+	        		<div class="input-group">
+	        			<select name="inquiry-object" id="inquiry-object" class="form-control">
+	        				<option value="">Укажите номер</option>
+	        				<option value="the Cottage">Коттедж за 3200р.</option>
+	        				<option value="Cedr House">Кедровый домик за 3800р.</option>
+	        				<option value="The cottage luks">Коттедж Люкс за 7000р.</option>
+	        				<option value="appartments">Апартаменты за 11000р.</option>
+	        			</select>
+	        		</div>
+	        	</div>
+	        	<!-- =========================== -->
+	        	<div class="inquiry-check-in">
+	        		<div class="date-select">
+	        			<label for="inquiry-date-check-in">Дата заезда:</label>
+	        			<div class="input-group">
+	        				<div class="calend">
+	        					<span class="calendar"></span>
+	        				</div>
+	        				<input type="text" class="form-control datepicker" name="inquiry-date-check-in" placeholder="дд/мм/гг">
+	        			</div>
+	        		</div>
+	        		<!-- =========================== -->
+	        		<div class="time-select">
+	        			<label for="inquiry-time-check-in">Время</label>
+	        			<div class="input-group">
+	        				<div class="calend">
+	        					<span class="clock"></span>
+	        				</div>
+	        				<select name="inquiry-time-check-in" class="form-control" id="inquiry-time-check-in">
+              <option value="">Укажите время</option>
+              <option value="12:00 AM">12:00 AM</option>
+              <option value="12:30 AM">12:30 AM</option>
+              <option value="01:00 AM">01:00 AM</option>
+              <option value="01:30 AM">01:30 AM</option>
+              <option value="02:00 AM">02:00 AM</option>
+              <option value="02:30 AM">02:30 AM</option>
+              <option value="03:00 AM">03:00 AM</option>
+              <option value="03:30 AM">03:30 AM</option>
+              <option value="04:00 AM">04:00 AM</option>
+              <option value="04:30 AM">04:30 AM</option>
+              <option value="05:00 AM">05:00 AM</option>
+              <option value="05:30 AM">05:30 AM</option>
+              <option value="06:00 AM">06:00 AM</option>
+              <option value="06:30 AM">06:30 AM</option>
+              <option value="07:00 AM">07:00 AM</option>
+              <option value="07:30 AM">07:30 AM</option>
+              <option value="08:00 AM">08:00 AM</option>
+              <option value="08:30 AM">08:30 AM</option>
+              <option value="09:00 AM">09:00 AM</option>
+              <option value="09:30 AM">09:30 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="02:30 PM">02:30 PM</option>
+              <option value="03:00 PM">03:00 PM</option>
+              <option value="03:30 PM">03:30 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="04:30 PM">04:30 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+              <option value="05:30 PM">05:30 PM</option>
+              <option value="06:00 PM">06:00 PM</option>
+              <option value="06:30 PM">06:30 PM</option>
+              <option value="07:00 PM">07:00 PM</option>
+              <option value="07:30 PM">07:30 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:00 PM">09:00 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+              <option value="10:30 PM">10:30 PM</option>
+              <option value="11:00 PM">11:00 PM</option>
+              <option value="11:30 PM">11:30 PM</option>
+          			</select>
+	        			</div>
+	        		</div>
+	        		<div class="clearfix"></div>
+	        	</div>
+	        	<!-- =========================== -->
+	        	<div class="inquiry-check-out">
+	        		<!-- =========================== -->
+            <div class="date-select">
+             <label for="inquiry-date-check-out">Дата выезда:</label>
+             <div class="input-group">
+              <div class="calend">
+	        					<span class="calendar"></span>
+	        				</div>
+              <input type="text" class="form-control datepicker" name="inquiry-date-check-out" placeholder="дд/мм/гг" id="inquiry-date-check-out">
+             </div>
+            </div>
+            <!-- =========================== -->
+            <div class="time-select">
+             <label for="inquiry-time-check-out">Время</label>
+             <div class="input-group">
+              <div class="calend">
+	        					<span class="clock"></span>
+	        				</div>
+              <select name="inquiry-time-check-out" class="form-control" id="inquiry-time-check-out">
+               <option value="">Укажите время</option>
+               <option value="12:00 AM">12:00 AM</option>
+               <option value="12:30 AM">12:30 AM</option>
+               <option value="01:00 AM">01:00 AM</option>
+               <option value="01:30 AM">01:30 AM</option>
+               <option value="02:00 AM">02:00 AM</option>
+               <option value="02:30 AM">02:30 AM</option>
+               <option value="03:00 AM">03:00 AM</option>
+               <option value="03:30 AM">03:30 AM</option>
+               <option value="04:00 AM">04:00 AM</option>
+               <option value="04:30 AM">04:30 AM</option>
+               <option value="05:00 AM">05:00 AM</option>
+               <option value="05:30 AM">05:30 AM</option>
+               <option value="06:00 AM">06:00 AM</option>
+               <option value="06:30 AM">06:30 AM</option>
+               <option value="07:00 AM">07:00 AM</option>
+               <option value="07:30 AM">07:30 AM</option>
+               <option value="08:00 AM">08:00 AM</option>
+               <option value="08:30 AM">08:30 AM</option>
+               <option value="09:00 AM">09:00 AM</option>
+               <option value="09:30 AM">09:30 AM</option>
+               <option value="10:00 AM">10:00 AM</option>
+               <option value="10:30 AM">10:30 AM</option>
+               <option value="11:00 AM">11:00 AM</option>
+               <option value="11:30 AM">11:30 AM</option>
+               <option value="12:00 PM">12:00 PM</option>
+               <option value="12:30 PM">12:30 PM</option>
+               <option value="01:00 PM">01:00 PM</option>
+               <option value="01:30 PM">01:30 PM</option>
+               <option value="02:00 PM">02:00 PM</option>
+               <option value="02:30 PM">02:30 PM</option>
+               <option value="03:00 PM">03:00 PM</option>
+               <option value="03:30 PM">03:30 PM</option>
+               <option value="04:00 PM">04:00 PM</option>
+               <option value="04:30 PM">04:30 PM</option>
+               <option value="05:00 PM">05:00 PM</option>
+               <option value="05:30 PM">05:30 PM</option>
+               <option value="06:00 PM">06:00 PM</option>
+               <option value="06:30 PM">06:30 PM</option>
+               <option value="07:00 PM">07:00 PM</option>
+               <option value="07:30 PM">07:30 PM</option>
+               <option value="08:00 PM">08:00 PM</option>
+               <option value="08:30 PM">08:30 PM</option>
+               <option value="09:00 PM">09:00 PM</option>
+               <option value="09:30 PM">09:30 PM</option>
+               <option value="10:00 PM">10:00 PM</option>
+               <option value="10:30 PM">10:30 PM</option>
+               <option value="11:00 PM">11:00 PM</option>
+               <option value="11:30 PM">11:30 PM</option>
+           			</select>
+             </div>
+            </div>
+        			</div>
+        		<!-- =========================== -->
+        		<!-- inquiry-poeople start -->
+	        	<div class="inquiry-people">
+           <div class="people-select">
+            <label for="inquiry-children">Вы приедете с детьми?</label>
+            <div class="input-group">
+             <div class="calend">
+	        					<i class="ig-ic-pers ig-ic"></i>
+	        				</div>
+	            <select name="inquiry-children" class="form-control" id="inquiry-children">
+              <option value="Without children">Без детей</option>
+              <option value="1 - Child">1 ребенок</option>
+              <option value="2 - Children">2 ребенка</option>
+              <option value="3 - Children">3 ребенка</option>
+              <option value="4 - Children">4 ребенка</option>
+              <option value="5 - Children">5 детей</option>
+	            </select>
+            </div>
+           </div>
+           <div class="people-select" style="padding-right: 7px;">
+            <label for="inquiry-adults">Сколько взрослых?</label>
+            <div class="input-group">
+             <div class="calend">
+	        					<i class="ig-ic-name ig-ic"></i>
+	        				</div>
+             <select name="inquiry-adults" class="form-control" id="inquiry-adults">
+              <option value="1 - Adult">1 </option>
+              <option value="2 - Adult">2 </option>
+              <option value="3 - Adult">3 </option>
+              <option value="4 - Adult">4 </option>
+              <option value="5 - Adult">5 </option>
+              <option value="6 - Adult">6 </option>
+             </select>
+            </div>
+           </div>
+          </div>
+          <!-- inquiry-poeople end -->
+	        </div>
+	        <!-- room and date end -->
+	        <!-- Personal Information start -->
+	        <div class="personal-information">
+          <h2>Персональная информация</h2>
+          <div class="form-group first-name-group">
+           <label for="first-name">Имя</label>
+           <input type="text" name="first-name" class="form-control" id="first-name" placeholder="Введите имя">
+          </div>
+          <div class="form-group last-name-group">
+           <label for="last-name">Фамилия</label>
+           <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Введите фамилию">
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-group address-group">
+           <label for="address">Адрес</label>
+           <input type="text" name="address" class="form-control" id="address" placeholder="Город,улица....">
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-group zip-code-group">
+           <label for="zip-code">Почтовый индекс</label>
+           <input type="text" name="zip-code" class="form-control" id="zip-code" placeholder="Напишите индекс">
+          </div>
+          <div class="form-group city-group">
+           <label for="city">Город</label>
+           <input type="text" name="city" class="form-control" id="city" placeholder="Введите город">
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-group phone-group">
+           <label for="phone">Контактный телефон</label>
+           <input type="text" name="phone" class="form-control" id="phone" placeholder="Введите телефон">
+          </div>
+          <div class="form-group email-group">
+           <label for="email">Email</label>
+           <input type="text" name="email" class="form-control" id="email" placeholder="Введите email">
+          </div>
+          <div class="clearfix"></div>
+          <div class="newsletter-checkbox">
+           <input type="checkbox" id="newsletter-cb" name="newsletter" value="Yes, Please send me latest news and updates!">
+           <label for="newsletter-cb">Я разрешаю хранить и использовать эту персональную информацию для бронирования!</label>
+         </div>
+      		</div>
+	        <!-- Personal Information end -->
+	      </div>
+	      <div class="modal-footer">
+       	<div class="inquiry-info">
+	        <div class="inquiry-info-sign hidden-xs">!</div>
+	        <p>Обратите внимание, что это не фактическое бронирование, а только запрос.<br>
+	        	Мы свяжется с Вами для подтверждения бронирования в ближайшее время.
+	       	</p>
+       	</div>
+       	<button type="submit" class="btn btn-inquiry-submit">Отправить!</button>
+   				</div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>

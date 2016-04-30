@@ -421,7 +421,7 @@ h2 {
   color: #2f2c2c;
   text-align: center; }
 
-span.calendar {
+span.calendar, span.clock {
   background-image: url(../img/icons/calendar.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -432,9 +432,29 @@ span.calendar {
   margin-bottom: -2px;
   margin-right: 4px; }
 
+span.clock {
+  background-image: url(../img/icons/clock.png); }
+
 i.fa-calendar {
   font-size: 21px;
   margin-right: 7px; }
+
+i.ig-ic {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+i.ig-ic-name {
+  background-image: url(../img/icons/ig-ic-name.png); }
+
+i.ig-ic-tel {
+  background-image: url(../img/icons/ig-ic-tel.png); }
+
+i.ig-ic-pers {
+  background-image: url(../img/icons/ig-ic-pers.png); }
 
 .carousel-control {
   position: absolute;
@@ -484,7 +504,7 @@ header.main-head nav.top-nav {
       position: absolute;
       left: 50%;
       bottom: -25px;
-      margin-left: -7px; }
+      margin-left: -14px; }
   header.main-head nav.top-nav .select-c {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -891,17 +911,6 @@ section.form-help {
     box-shadow: none;
     font-size: 18px;
     font-weight: 400; }
-  .input-group i.ig-ic {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; }
-  .input-group i.ig-ic-name {
-    background-image: url(../img/icons/ig-ic-name.png); }
-  .input-group i.ig-ic-tel {
-    background-image: url(../img/icons/ig-ic-tel.png); }
 
 .welcome {
   margin-top: 100px;
@@ -1104,6 +1113,164 @@ section.location .addres {
     left: 50%;
     top: -30px;
     margin-left: -30px; }
+
+#inquiryModal .modal-dialog {
+  width: 748px; }
+  #inquiryModal .modal-dialog .modal-content {
+    border-radius: 0;
+    box-shadow: none; }
+    #inquiryModal .modal-dialog .modal-content .modal-header {
+      background-color: #4b90d0;
+      color: #fff; }
+      #inquiryModal .modal-dialog .modal-content .modal-header h4 {
+        font-weight: 300;
+        padding-left: 40px;
+        font-size: 24px; }
+    #inquiryModal .modal-dialog .modal-content .modal-body label {
+      font-size: 17px;
+      font-weight: normal;
+      margin-bottom: 5px;
+      color: #585858;
+      padding-left: 3px; }
+    #inquiryModal .modal-dialog .modal-content .modal-body .input-group {
+      background-color: #d9e7f5;
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 0;
+      margin-top: 0;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 45px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .input-group .calend {
+        background-color: #4b90d0;
+        height: 100%;
+        padding: 0 10px; }
+        #inquiryModal .modal-dialog .modal-content .modal-body .input-group .calend span.calendar, #inquiryModal .modal-dialog .modal-content .modal-body .input-group .calend span.clock {
+          width: 25px;
+          margin: 0 auto;
+          height: 100%; }
+        #inquiryModal .modal-dialog .modal-content .modal-body .input-group .calend i.ig-ic {
+          margin-top: 10px; }
+    #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date {
+      padding: 25px 30px 0 30px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .room-select {
+        height: 58px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #d9e7f5;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        position: relative; }
+        #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .room-select select {
+          background: transparent;
+          border: 0;
+          border-radius: 0;
+          height: 58px;
+          font-size: 24px;
+          font-weight: 400;
+          appearance: none;
+          box-shadow: none;
+          color: #68429e; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .inquiry-check-in {
+        margin-bottom: 0; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .date-select {
+        margin-bottom: 10px;
+        float: left;
+        width: 50%;
+        padding-right: 7px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .time-select {
+        margin-bottom: 10px;
+        float: right;
+        width: 50%;
+        overflow: hidden;
+        position: relative; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .inquiry-check-out {
+        margin-bottom: 15px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .inquiry-people {
+        margin-bottom: 15px; }
+        #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .inquiry-people .people-select {
+          margin-bottom: 10px;
+          float: right;
+          width: 50%;
+          overflow: hidden;
+          position: relative; }
+    #inquiryModal .modal-dialog .modal-content .modal-body .form-control {
+      background-color: #d9e7f5;
+      box-shadow: none;
+      appearance: none;
+      font-size: 14px;
+      font-weight: 400;
+      height: 100%;
+      padding-left: 10px;
+      border-radius: 0; }
+    #inquiryModal .modal-dialog .modal-content .modal-body .personal-information {
+      padding: 0px 30px 20px 30px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information h2 {
+        font-size: 19px;
+        font-weight: 300;
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .first-name-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .phone-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .zip-code-group {
+        float: left;
+        width: 50%;
+        padding-right: 7px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .last-name-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .city-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .email-group {
+        float: right;
+        width: 50%;
+        padding-left: 7px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .zip-code-group {
+        width: 30%; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .city-group {
+        width: 70%; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .form-group {
+        height: 45px;
+        margin-bottom: 35px; }
+    #inquiryModal .modal-dialog .modal-content .modal-body .newsletter-checkbox {
+      margin-top: 20px; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .newsletter-checkbox input[type="checkbox"] {
+        display: none; }
+      #inquiryModal .modal-dialog .modal-content .modal-body .newsletter-checkbox label:before {
+        content: "";
+        display: inline-block;
+        font-size: 15px;
+        width: 21px;
+        height: 21px;
+        margin-right: 10px;
+        background-color: #4b90d0;
+        border-radius: 5px;
+        line-height: 24px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        color: #f3f3f3;
+        text-align: center;
+        float: left; }
+    #inquiryModal .modal-dialog .modal-content .modal-footer {
+      background-color: #d9e7f5;
+      text-align: left;
+      padding-top: 20px;
+      margin-bottom: 30px;
+      border-top: none; }
+      #inquiryModal .modal-dialog .modal-content .modal-footer .inquiry-info {
+        font-size: 13px;
+        float: left;
+        padding-left: 15px; }
+      #inquiryModal .modal-dialog .modal-content .modal-footer .btn-inquiry-submit {
+        float: right;
+        font-size: 16px;
+        background-color: #4b90d0;
+        color: #fff;
+        padding: 11px 35px; }
+      #inquiryModal .modal-dialog .modal-content .modal-footer .inquiry-info-sign {
+        font-size: 44px;
+        color: #4b90d0;
+        float: left;
+        line-height: 35px; }
+      #inquiryModal .modal-dialog .modal-content .modal-footer .inquiry-info p {
+        line-height: 20px;
+        margin-left: 20px; }
 
 @media (max-width: 1200px) {
   section.about-tabs {
@@ -1322,3 +1489,29 @@ section.location .addres {
   section.prices .rate-box:hover {
     -webkit-transform: scale(1);
             transform: scale(1); } }
+
+@media (max-width: 768px) {
+  #inquiryModal .modal-dialog {
+    width: 100%;
+    margin: 0; }
+  #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .date-select, #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .time-select {
+    float: none;
+    width: 100%;
+    padding-right: 0px; }
+  #inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .inquiry-people .people-select {
+    float: none;
+    width: 100%;
+    padding-right: 0px; }
+  #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .first-name-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .last-name-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .zip-code-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .city-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .phone-group, #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .email-group {
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px; }
+  #inquiryModal .modal-dialog .modal-content .modal-footer .inquiry-info {
+    float: none;
+    padding-left: 0px;
+    text-align: center; }
+  #inquiryModal .modal-dialog .modal-content .modal-footer .btn-inquiry-submit {
+    float: none;
+    width: 100%;
+    text-align: center; } }

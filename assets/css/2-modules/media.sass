@@ -56,7 +56,7 @@
 					margin-top: 0
 					a 
 						font-size: 15px 
-					a.active:after
+					a.active:after, a:focus:after
 						border: 0 
 	section.about-tabs
 		padding-bottom: 20px
@@ -159,7 +159,7 @@
 				.item
 					height: 500px 
 
-@media (max-width: 410px)
+@media (max-width: 430px)
 	.copyrights
 		font-size: 13px
 	section.location
@@ -239,3 +239,8 @@
 			font-size: 36px
 		.rate-box:hover
 			transform: scale(1)
+
+@media (max-width: 768px)
+	#inquiryModal .modal-dialog 
+	 width: 100%
+	 margin: 0
