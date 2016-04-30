@@ -556,6 +556,7 @@ header.main-head section.slider {
     header.main-head section.slider .carousel .item {
       height: 635px; }
       header.main-head section.slider .carousel .item img {
+        height: 100%;
         position: absolute;
         margin: auto;
         top: 0;
