@@ -1180,6 +1180,7 @@ section.location .addres {
     top: -30px;
     margin-left: -30px; }
   .copyrights .tel {
+    color: #fff;
     text-align: right; }
 
 #inquiryModal .modal-dialog {
@@ -1579,6 +1580,7 @@ section.location .addres {
   .copyrights, .tel {
     text-align: center !important; }
     .copyrights .tel, .tel .tel {
+      color: #fff !important;
       margin-top: 5px; }
   section.comments .comment {
     height: 100%; }
