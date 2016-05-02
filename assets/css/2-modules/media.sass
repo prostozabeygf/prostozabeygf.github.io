@@ -45,6 +45,8 @@
 					display: block
 					border-bottom: 1px solid black
 					margin-top: 0
+					&:last-child
+						border-bottom: 0
 					a 
 						font-size: 15px 
 					a.active:after, a:focus:after
@@ -133,7 +135,7 @@
 			width: 280px
 			height: 300px
 		p 
-			font-size: em(14px)
+			font-size: em(13px)
 
 @media (max-width: 807px)
 	.row-sm-m
@@ -267,6 +269,7 @@
 	.copyrights, .tel 
 		text-align: center !important
 		.tel
+			color: #fff !important
 		 margin-top: 5px
 	section.comments 
 		.comment

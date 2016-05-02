@@ -1374,16 +1374,20 @@ section.location .addres {
       header.main-head .navbar-header .menu i:hover {
         cursor: pointer; }
   header.main-head nav.top-nav ul.nav {
-    display: none; }
+    display: none;
+    transition: all 300ms ease-in-out; }
   header.main-head nav.top-nav ul.nav.show-in {
     display: block;
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    transition: all 300ms ease-in-out; }
     header.main-head nav.top-nav ul.nav.show-in li {
       padding: 2px 0;
       display: block;
       border-bottom: 1px solid black;
       margin-top: 0; }
+      header.main-head nav.top-nav ul.nav.show-in li:last-child {
+        border-bottom: 0; }
       header.main-head nav.top-nav ul.nav.show-in li a {
         font-size: 15px; }
       header.main-head nav.top-nav ul.nav.show-in li a.active:after, header.main-head nav.top-nav ul.nav.show-in li a:focus:after {
@@ -1584,6 +1588,9 @@ section.location .addres {
       margin-top: 5px; }
   section.comments .comment {
     height: 100%; }
+    section.comments .comment p {
+      font-size: 0.8125em;
+      padding: 0 15px; }
     section.comments .comment .thk {
       padding: 0 20px; } }
 

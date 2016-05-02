@@ -35,19 +35,22 @@ $(function () {
 		$(".nav").toggleClass('show-in');
 		$(".select-c").toggleClass('show-in');
 	});
-	$('.counter').waypoint(function() {
+$(document).ready(function () {
+ $(".show-in li a").on('click', function(event) {
+  $(".nav").toggleClass('show-in');
+ });
+});
 
-        $('.counter-numb').each(function(){
-            var numberValue = $(this).data('value');
-            $(this).animateNumber({number:numberValue}, 5000);
-        });
-
-        this.destroy()
-
-    }, {
-        offset: '100%',
-        triggerOnce: true
-    });
+$('.counter').waypoint(function() {
+$('.counter-numb').each(function(){
+    var numberValue = $(this).data('value');
+    $(this).animateNumber({number:numberValue}, 5000);
+});
+this.destroy()
+}, {
+offset: '100%',
+triggerOnce: true
+});
  
 });
 
