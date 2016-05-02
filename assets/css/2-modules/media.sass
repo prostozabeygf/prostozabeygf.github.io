@@ -18,6 +18,8 @@
 				display: none
 
 @media (max-width: 992px)
+	.teaser-slider-ph 
+		height: 530px
 	header.main-head
 		.navbar-header
 			width: 100%
@@ -32,17 +34,6 @@
 				i:hover 
 					cursor: pointer
 		nav.top-nav
-			.select-c
-				display: none
-			.select-c.show-in
-				display: flex
-				justify-content: center
-				margin-top: 20px
-				margin-bottom: 20px
-				margin-left: 0
-				.country-ic
-					width: 55px
-					height: 32px
 			ul.nav
 				display: none
 			ul.nav.show-in
@@ -58,6 +49,10 @@
 						font-size: 15px 
 					a.active:after, a:focus:after
 						border: 0 
+		section.slider
+			.carousel
+				.item
+					height: 455px 
 	section.about-tabs
 		padding-bottom: 20px
 		.about-p p
@@ -164,6 +159,16 @@
 				.item
 					height: 376px 
 
+@media (max-width: 1235px) 
+	header.main-head nav.top-nav ul.nav li a 
+		font-size: 16px
+@media (max-width: 1187px) 
+	header.main-head nav.top-nav ul.nav li a 
+		font-size: 14px
+@media (max-width: 1076px) 
+	header.main-head nav.top-nav ul.nav li a 
+		font-size: 13px
+
 @media (max-width: 430px)
 	.row-sm-m
 		margin: 0px !important
@@ -214,6 +219,10 @@
 						height: 80%
 					.room-tabs-gallery-caption
 						font-size: 13px
+						padding: 0 5px
+						button 
+							padding: 3px
+							font-size: 14px
 			.room-tabs-description
 				p 
 					padding: 0
@@ -259,6 +268,12 @@
 		text-align: center !important
 		.tel
 		 margin-top: 5px
+	section.comments 
+		.comment
+			height: 100%
+			.thk
+				padding: 0 20px
+
 
 @media (max-width: 768px)
 	#inquiryModal .modal-dialog 

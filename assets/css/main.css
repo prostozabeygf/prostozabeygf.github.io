@@ -733,10 +733,15 @@ section.attraction {
     overflow: hidden; }
     section.attraction .attraction-link .attraction-img {
       position: relative; }
-      section.attraction .attraction-link .attraction-img img {
+      section.attraction .attraction-link .attraction-img .img-r {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         transition: -webkit-transform 400ms ease-in-out;
         transition: transform 400ms ease-in-out; }
-      section.attraction .attraction-link .attraction-img:hover img {
+      section.attraction .attraction-link .attraction-img:hover .img-r {
         -webkit-transform: scale(1.2);
                 transform: scale(1.2); }
       section.attraction .attraction-link .attraction-img:hover .attraction-overlay {
@@ -750,6 +755,16 @@ section.attraction {
         top: 0;
         text-align: center;
         transition: all 0.4s ease; }
+    section.attraction .attraction-link .attr-img-1 {
+      height: 209px; }
+    section.attraction .attraction-link .attr-img-2, section.attraction .attraction-link .attr-img-3 {
+      height: 227px; }
+    section.attraction .attraction-link .attr-img-4 {
+      height: 519px; }
+    section.attraction .attraction-link .attr-img-5 {
+      height: 205px; }
+    section.attraction .attraction-link .attr-img-6 {
+      height: 227px; }
     section.attraction .attraction-link .attraction-caption {
       position: relative;
       background-color: #00a651;
@@ -838,6 +853,7 @@ section.comments {
     background-color: #fff;
     text-align: center;
     color: #585858;
+    height: 387px;
     position: relative;
     padding: 100px 0px 20px;
     border-bottom: 7px solid #00a651; }
@@ -853,7 +869,7 @@ section.comments {
       height: 155px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center right; }
+      background-position: center center; }
     section.comments .comment .name {
       font-size: 1.5em;
       margin: 10px 0; }
@@ -1563,7 +1579,11 @@ section.location .addres {
   .copyrights, .tel {
     text-align: center !important; }
     .copyrights .tel, .tel .tel {
-      margin-top: 5px; } }
+      margin-top: 5px; }
+  section.comments .comment {
+    height: 100%; }
+    section.comments .comment .thk {
+      padding: 0 20px; } }
 
 @media (max-width: 768px) {
   #inquiryModal .modal-dialog {
