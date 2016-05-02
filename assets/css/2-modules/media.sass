@@ -128,7 +128,7 @@
 			font-size: 12px
 	section.form-help
 		p 
-			font-size: 16px
+			font-size: em(16px)
 			padding: 0 50px
 	.welcome
 		h2
@@ -138,9 +138,14 @@
 			width: 280px
 			height: 300px
 		p 
-			font-size: 14px
+			font-size: em(14px)
 
 @media (max-width: 807px)
+	.row-sm-m
+		margin: 0px -15px !important
+	.sm-smd
+		.attraction-img
+			height: 270px
 	section.location
 		.addres 
 			font-size: 14px
@@ -152,14 +157,20 @@
 		.rate-box:hover
 			transform: scale(1)
 	.teaser-slider-ph 
-		height: 500px
+		height: 470px
 	header.main-head
 		section.slider
 			.carousel
 				.item
-					height: 500px 
+					height: 376px 
 
 @media (max-width: 430px)
+	.row-sm-m
+		margin: 0px !important
+	.sm-smd
+		padding: 0 
+		.attraction-img
+			height: 200px
 	header.main-head
 		nav.top-nav .fin-logo
 			margin-left: 0
@@ -170,12 +181,12 @@
 			line-height: 20px
 			padding: 5px 10px 0
 	.teaser-slider-ph 
-		height: 400px
+		height: 303px
 	header.main-head
 		section.slider
 			.carousel
 				.item
-					height: 300px 
+					height: 210px 
 	section.features
 		.feature
 			margin-bottom: 20px
@@ -212,6 +223,8 @@
 				img.image-responsive
 					width: 100%
 			.attraction-caption
+				padding: 0 7px
+				font-size: 11px
 				height: 40px
 	section.counter 
 		.counter-hs
@@ -242,6 +255,10 @@
 			font-size: 36px
 		.rate-box:hover
 			transform: scale(1)
+	.copyrights, .tel 
+		text-align: center !important
+		.tel
+		 margin-top: 5px
 
 @media (max-width: 768px)
 	#inquiryModal .modal-dialog 

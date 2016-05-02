@@ -416,7 +416,7 @@ a:hover {
     color: #fff; }
 
 h2 {
-  font-size: 35px;
+  font-size: 2.1875em;
   font-weight: 400;
   color: #2f2c2c;
   text-align: center; }
@@ -487,7 +487,7 @@ header.main-head nav.top-nav {
     position: relative; }
     header.main-head nav.top-nav ul.nav li a {
       display: inline-block;
-      font-size: 17px;
+      font-size: 1.0625em;
       font-weight: 300;
       color: #fff; }
       header.main-head nav.top-nav ul.nav li a:hover {
@@ -555,9 +555,9 @@ header.main-head section.slider {
     width: 100%;
     overflow: hidden; }
     header.main-head section.slider .carousel .item {
-      height: 635px; }
+      height: 630px; }
       header.main-head section.slider .carousel .item img {
-        height: 100%;
+        height: auto;
         position: absolute;
         margin: auto;
         top: 0;
@@ -595,7 +595,7 @@ section.call-to-action {
       display: block;
       margin: 0 auto;
       background-color: #4b90d0;
-      font-size: 17px;
+      font-size: 0.875em;
       letter-spacing: 0.5px; }
       section.call-to-action .call-to-box button.btn:hover {
         background-color: rgba(75, 144, 208, 0.7);
@@ -632,16 +632,16 @@ section.features {
     section.features .feature h3 {
       margin: 30px 0 20px;
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 1.25em;
       font-weight: 700; }
     section.features .feature p {
-      font-size: 20px;
+      font-size: 1.25em;
       font-weight: 300;
       line-height: 1.1; }
 
 section.about-tabs {
   color: #2f2c2c;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   padding-bottom: 100px; }
   section.about-tabs h2 {
@@ -662,7 +662,7 @@ section.about-tabs {
         margin: 0;
         text-transform: uppercase;
         color: #363a3e;
-        font-size: 16px; }
+        font-size: 1.0625em; }
     section.about-tabs ul.nav-tabs li.active a {
       border: none;
       margin-top: 1px;
@@ -671,7 +671,7 @@ section.about-tabs {
     margin: 0 0 20px; }
   section.about-tabs .tab-content .room-tabs-description p {
     padding: 0 40px 0 0;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 1.5; }
   section.about-tabs .tab-content .room-tabs-description ul.room-tabs-checklist li {
     font-size: 16px;
@@ -703,7 +703,7 @@ section.about-tabs {
         position: relative;
         padding: 0px 20px;
         height: 55px;
-        font-size: 16px;
+        font-size: 1em;
         z-index: 20;
         background-color: #4b90d0;
         color: #fff; }
@@ -719,7 +719,7 @@ section.about-tabs {
           top: -16px;
           margin-left: -16px; }
         section.about-tabs .tab-content .room-tabs-gallery .room-tabs-gallery-image .room-tabs-gallery-caption button {
-          font-size: 16px;
+          font-size: 1.125em;
           font-weight: 300;
           letter-spacing: 0.5px; }
 
@@ -727,7 +727,7 @@ section.attraction {
   margin-bottom: 90px; }
   section.attraction h2 {
     margin-bottom: 95px;
-    font-size: 48px; }
+    font-size: 3em; }
   section.attraction .attraction-link {
     margin-bottom: 30px;
     overflow: hidden; }
@@ -757,7 +757,7 @@ section.attraction {
       border-top: 1px solid #fff;
       padding: 0 20px;
       height: 55px;
-      font-size: 13px;
+      font-size: 0.8125em;
       transition: all 0.5s ease;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -806,10 +806,10 @@ section.counter {
     color: #2774bb; }
     section.counter .count .counter-numb {
       margin-bottom: 15px;
-      font-size: 60px; }
+      font-size: 3.75em; }
     section.counter .count .counter-description {
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 0.875em; }
 
 section.comments {
   background-image: url(../img/comments-bg.jpg);
@@ -855,19 +855,19 @@ section.comments {
       background-repeat: no-repeat;
       background-position: center right; }
     section.comments .comment .name {
-      font-size: 24px;
+      font-size: 1.5em;
       margin: 10px 0; }
     section.comments .comment .prof {
       color: #00a651;
       font-size: 17px; }
     section.comments .comment .thk {
-      font-size: 18px;
+      font-size: 1.125em;
       margin-top: 15px; }
     section.comments .comment p {
       margin: 15px 0;
       line-height: 1.5;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 0.875em;
       padding: 0 30px; }
 
 section.form-help {
@@ -883,7 +883,7 @@ section.form-help {
     margin-top: -55px; }
   section.form-help p {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25em;
     text-transform: uppercase;
     padding: 0 135px;
     line-height: 1.4;
@@ -911,7 +911,7 @@ section.form-help {
         transition: all 0.5s ease; }
       section.form-help .newsletter-box-sumbit .newsletter-box-button .btn {
         height: 56px;
-        font-size: 24px;
+        font-size: 1.5em;
         font-weight: 400;
         padding: 6px 12px;
         border-radius: 0; }
@@ -938,7 +938,7 @@ section.form-help {
     background-color: #fff;
     border: none;
     box-shadow: none;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400; }
 
 footer.main-foot .input-group .input-group-addon, section.form-help .input-group .input-group-addon {
@@ -946,7 +946,7 @@ footer.main-foot .input-group .input-group-addon, section.form-help .input-group
   color: #68429e;
   border: none;
   font-size: 24px;
-  border-right: 1px solid #68429e;
+  border-right: 1px solid #50aed9;
   padding: 2px 9px; }
   footer.main-foot .input-group .input-group-addon i.ig-ic, section.form-help .input-group .input-group-addon i.ig-ic {
     display: block;
@@ -972,7 +972,7 @@ footer.main-foot .input-group .input-group-addon, section.form-help .input-group
     height: 360px;
     overflow-y: hidden; }
   .welcome p {
-    font-size: 18px;
+    font-size: 1.125em;
     letter-spacing: 0.7px;
     line-height: 1.7;
     margin-bottom: 50px; }
@@ -984,7 +984,7 @@ section.services {
   padding-bottom: 110px; }
   section.services h2 {
     margin-top: 35px;
-    font-size: 48px;
+    font-size: 3em;
     letter-spacing: 1px;
     margin-bottom: 70px;
     color: #4a4a4a; }
@@ -1163,6 +1163,8 @@ section.location .addres {
     left: 50%;
     top: -30px;
     margin-left: -30px; }
+  .copyrights .tel {
+    text-align: right; }
 
 #inquiryModal .modal-dialog {
   width: 748px; }
@@ -1340,6 +1342,8 @@ section.location .addres {
     display: none; } }
 
 @media (max-width: 992px) {
+  .teaser-slider-ph {
+    height: 530px; }
   header.main-head .navbar-header {
     width: 100%; }
     header.main-head .navbar-header .fin-logo {
@@ -1352,21 +1356,6 @@ section.location .addres {
       font-size: 24px; }
       header.main-head .navbar-header .menu i:hover {
         cursor: pointer; }
-  header.main-head nav.top-nav .select-c {
-    display: none; }
-  header.main-head nav.top-nav .select-c.show-in {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0; }
-    header.main-head nav.top-nav .select-c.show-in .country-ic {
-      width: 55px;
-      height: 32px; }
   header.main-head nav.top-nav ul.nav {
     display: none; }
   header.main-head nav.top-nav ul.nav.show-in {
@@ -1382,6 +1371,8 @@ section.location .addres {
         font-size: 15px; }
       header.main-head nav.top-nav ul.nav.show-in li a.active:after, header.main-head nav.top-nav ul.nav.show-in li a:focus:after {
         border: 0; }
+  header.main-head section.slider .carousel .item {
+    height: 455px; }
   section.about-tabs {
     padding-bottom: 20px; }
     section.about-tabs .about-p p {
@@ -1449,7 +1440,7 @@ section.location .addres {
     text-align: center;
     font-size: 12px; }
   section.form-help p {
-    font-size: 16px;
+    font-size: 1em;
     padding: 0 50px; }
   .welcome h2 {
     font-size: 30px;
@@ -1458,9 +1449,13 @@ section.location .addres {
     width: 280px;
     height: 300px; }
   .welcome p {
-    font-size: 14px; } }
+    font-size: 0.875em; } }
 
 @media (max-width: 807px) {
+  .row-sm-m {
+    margin: 0px -15px !important; }
+  .sm-smd .attraction-img {
+    height: 270px; }
   section.location .addres {
     font-size: 14px; }
   .row {
@@ -1471,11 +1466,29 @@ section.location .addres {
     -webkit-transform: scale(1);
             transform: scale(1); }
   .teaser-slider-ph {
-    height: 500px; }
+    height: 470px; }
   header.main-head section.slider .carousel .item {
-    height: 500px; } }
+    height: 376px; } }
+
+@media (max-width: 1235px) {
+  header.main-head nav.top-nav ul.nav li a {
+    font-size: 16px; } }
+
+@media (max-width: 1187px) {
+  header.main-head nav.top-nav ul.nav li a {
+    font-size: 14px; } }
+
+@media (max-width: 1076px) {
+  header.main-head nav.top-nav ul.nav li a {
+    font-size: 13px; } }
 
 @media (max-width: 430px) {
+  .row-sm-m {
+    margin: 0px !important; }
+  .sm-smd {
+    padding: 0; }
+    .sm-smd .attraction-img {
+      height: 200px; }
   header.main-head nav.top-nav .fin-logo {
     margin-left: 0; }
   .copyrights {
@@ -1484,9 +1497,9 @@ section.location .addres {
     line-height: 20px;
     padding: 5px 10px 0; }
   .teaser-slider-ph {
-    height: 400px; }
+    height: 303px; }
   header.main-head section.slider .carousel .item {
-    height: 300px; }
+    height: 210px; }
   section.features .feature {
     margin-bottom: 20px; }
     section.features .feature p {
@@ -1509,12 +1522,18 @@ section.location .addres {
     section.about-tabs .tab-content .room-tabs-gallery .room-tabs-gallery-image .room-tabs-gallery-preview-container {
       height: 80%; }
     section.about-tabs .tab-content .room-tabs-gallery .room-tabs-gallery-image .room-tabs-gallery-caption {
-      font-size: 13px; }
+      font-size: 13px;
+      padding: 0 5px; }
+      section.about-tabs .tab-content .room-tabs-gallery .room-tabs-gallery-image .room-tabs-gallery-caption button {
+        padding: 3px;
+        font-size: 14px; }
   section.about-tabs .tab-content .room-tabs-description p {
     padding: 0; }
   section.attraction .attraction-link .attraction-img img.image-responsive {
     width: 100%; }
   section.attraction .attraction-link .attraction-caption {
+    padding: 0 7px;
+    font-size: 11px;
     height: 40px; }
   section.counter .counter-hs {
     margin-bottom: 20px; }
@@ -1540,7 +1559,11 @@ section.location .addres {
     font-size: 36px; }
   section.prices .rate-box:hover {
     -webkit-transform: scale(1);
-            transform: scale(1); } }
+            transform: scale(1); }
+  .copyrights, .tel {
+    text-align: center !important; }
+    .copyrights .tel, .tel .tel {
+      margin-top: 5px; } }
 
 @media (max-width: 768px) {
   #inquiryModal .modal-dialog {
