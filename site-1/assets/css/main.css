@@ -629,7 +629,7 @@ section.original {
 
 section.po-russ {
   background-color: #3c3221;
-  padding: 60px 0 100px; }
+  padding: 50px 0 50px; }
   section.po-russ .col-1 {
     width: 60%;
     text-align: center; }
@@ -641,7 +641,6 @@ section.po-russ {
       color: #d7a52b;
       text-shadow: 5px 5px 7px black;
       padding-top: 115px; }
-
 section.form-and-call {
   background-image: url(../img/form-and-call.jpg);
   background-size: cover;
