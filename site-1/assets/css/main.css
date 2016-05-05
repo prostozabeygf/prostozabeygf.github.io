@@ -631,17 +631,17 @@ section.po-russ {
   background-color: #3c3221;
   padding: 30px 0 30px; }
   section.po-russ .col-1 {
-    width: 60%;
+    width: 50%;
     text-align: center; }
     section.po-russ .col-1 img {
       width: 87%; }
   section.po-russ .col-2 {
-    width: 40%; }
+    width: 50%; }
     section.po-russ .col-2 h2 {
       color: #d7a52b;
       text-shadow: 5px 5px 7px black;
-      padding-top: 115px; 
-      font-size: 42px; }
+      padding-top: 93px; 
+      font-size: 48px; }
 section.form-and-call {
   background-image: url(../img/form-and-call.jpg);
   background-size: cover;
