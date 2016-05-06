@@ -17,9 +17,9 @@ html {
  */
 body {
   margin: 0; }
-
 .pl-st::-webkit-input-placeholder { color:#372121; }
 .pl-st:-moz-placeholder { color:#372121; }
+
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -835,3 +835,79 @@ footer.main-foot .copyrights {
       font-size: 120px; }
     section.counter .counter-box .count-desc {
       font-size: 21px; } }
+
+@media (max-width: 660px) {
+  h2 {
+    font-size: 18px;
+    padding: 0; }
+  .main-logo {
+    width: 130px; }
+    .main-logo .high {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0px; }
+    .main-logo .low {
+      letter-spacing: 0.5px;
+      line-height: 12px;
+      font-size: 14px; }
+  header.main-head .head-tel .rel-sf, footer.main-foot .head-tel .rel-sf {
+    font-size: 18px;
+    margin-bottom: 1px; }
+  header.main-head .head-tel a.head-cta, footer.main-foot .head-tel a.head-cta {
+    font-size: 16px;
+    padding: 5px; }
+  section.buy-now-sect .thumbnail {
+    width: 150px; }
+  section.buy-now-sect .about-and-buy {
+    margin-left: 150px; }
+    section.buy-now-sect .about-and-buy h2 {
+      font-size: 16px;
+      padding: 0; }
+    section.buy-now-sect .about-and-buy p {
+      font-size: 12px;
+      margin-bottom: 10px; }
+    section.buy-now-sect .about-and-buy .since-price {
+      font-size: 16px;
+      margin-bottom: 10px; }
+      section.buy-now-sect .about-and-buy .since-price span.prcs {
+        font-size: 24px;
+        margin-left: 10px; }
+        section.buy-now-sect .about-and-buy .since-price span.prcs i.fa.fa-rub {
+          font-size: 18px; }
+    section.buy-now-sect .about-and-buy a.home-cta {
+      font-size: 16px; }
+  section.buy-now-sect .thumbnail img {
+    padding-top: 50px; }
+  section.examples h2 {
+    padding: 30px 0;
+    font-size: 18px; }
+  section.examples .thumbnails .thumb-box {
+    height: 200px; }
+    section.examples .thumbnails .thumb-box .thumb-desc {
+      font-size: 14px; }
+  section.special {
+    padding: 40px 0; }
+    section.special h3 {
+      font-size: 16px;
+      padding: 0px 10px;
+      margin-bottom: 15px; }
+    section.special a.home-cta {
+      font-size: 18px; }
+  section.counter .counter-wrap .counter-box .count-b {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  section.counter .counter-wrap .counter-box .count-num {
+    font-size: 32px;
+    margin-bottom: 10px; }
+  section.counter .counter-wrap .counter-box .count-desc {
+    font-size: 12px;
+    padding: 0; }
+  section.po-russ .col-2 h2 {
+    font-size: 17px;
+    padding-top: 30px; }
+  section.form-and-call .form input {
+    width: 60%;
+    font-size: 14px;
+    margin: 10px auto; }
+  section.form-and-call .form button.home-cta {
+    font-size: 18px; } }
