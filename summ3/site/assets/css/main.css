@@ -11,15 +11,14 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
+.pl-st::-webkit-input-placeholder { color:#372121; }
+.pl-st:-moz-placeholder { color:#372121; }
 
 /**
  * Remove default margin.
  */
 body {
   margin: 0; }
-.pl-st::-webkit-input-placeholder { color:#372121; }
-.pl-st:-moz-placeholder { color:#372121; }
-
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -877,7 +876,7 @@ footer.main-foot .copyrights {
     section.buy-now-sect .about-and-buy a.home-cta {
       font-size: 16px; }
   section.buy-now-sect .thumbnail img {
-    padding-top: 50px; }
+    padding-top: 30px; }
   section.examples h2 {
     padding: 30px 0;
     font-size: 18px; }
@@ -901,7 +900,7 @@ footer.main-foot .copyrights {
     margin-bottom: 10px; }
   section.counter .counter-wrap .counter-box .count-desc {
     font-size: 12px;
-    padding: 0; }
+    padding: 0 5px; }
   section.po-russ .col-2 h2 {
     font-size: 17px;
     padding-top: 30px; }
