@@ -19,6 +19,7 @@ body {
   margin: 0; }
 .pl-st::-webkit-input-placeholder { color:#372121; }
 .pl-st:-moz-placeholder { color:#372121; }
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -517,8 +518,10 @@ section.features {
   section.features .feat-box .feat-ic-2 {
     background-image: url(../img/feat-2.png); }
   section.features .feat-box .feat-ic-3 {
-    height: 150px;
-    margin-bottom: -5px;
+    height: 153px;
+    width: 155px;
+    margin-top: -3px;
+    margin-bottom: -6px;
     background-image: url(../img/feat-4.png); }
   section.features .feat-box h4 {
     text-transform: uppercase;
@@ -748,10 +751,14 @@ footer.main-foot {
     width: 33%;
     height: 60px;
     margin-bottom: -6px; }
+  section.features .feat-boxs .feat-box .feat-ic-1 {
+    margin-top: -1px;
+    margin-bottom: -4px; }
   section.features .feat-boxs .feat-box .feat-ic-3 {
-    width: 34%;
-    height: 65px;
-    margin-bottom: -11px; }
+    width: 35%;
+    height: 70px;
+    margin-top: -5px;
+    margin-bottom: -12px; }
   section.features .feat-boxs .feat-box h4 {
     margin-top: 0;
     font-size: 12px;
