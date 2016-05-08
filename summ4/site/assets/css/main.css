@@ -19,7 +19,6 @@ body {
   margin: 0; }
 .pl-st::-webkit-input-placeholder { color:#372121; }
 .pl-st:-moz-placeholder { color:#372121; }
-
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -518,6 +517,8 @@ section.features {
   section.features .feat-box .feat-ic-2 {
     background-image: url(../img/feat-2.png); }
   section.features .feat-box .feat-ic-3 {
+    height: 150px;
+    margin-bottom: -5px;
     background-image: url(../img/feat-4.png); }
   section.features .feat-box h4 {
     text-transform: uppercase;
@@ -745,10 +746,16 @@ footer.main-foot {
     font-size: 18px; }
   section.features .feat-boxs .feat-box .ic {
     width: 33%;
-    height: 60px; }
+    height: 60px;
+    margin-bottom: -6px; }
+  section.features .feat-boxs .feat-box .feat-ic-3 {
+    width: 34%;
+    height: 65px;
+    margin-bottom: -11px; }
   section.features .feat-boxs .feat-box h4 {
     margin-top: 0;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 3px; }
   section.features .feat-boxs .feat-box p {
     font-size: 10px;
     padding: 0; }
