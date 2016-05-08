@@ -19,6 +19,8 @@ body {
   margin: 0; }
 .pl-st::-webkit-input-placeholder { color:#372121; }
 .pl-st:-moz-placeholder { color:#372121; }
+
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -377,7 +379,7 @@ body {
   height: 100%; }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   position: absolute;
   top: 0;
   width: 100%;
@@ -419,18 +421,11 @@ a.home-cta, button.home-cta {
 .main-logo {
   color: #bdab7f;
   display: block;
-  width: 240px;
-  text-transform: uppercase;
-  font-family: 'Glasten', sans-serif; }
-  .main-logo .high {
-    font-size: 40px;
-    line-height: 30px;
-    margin-bottom: 4px; }
-  .main-logo .low {
-    letter-spacing: 0.5px;
-    line-height: 18px;
-    font-size: 21px;
-    font-weight: normal; }
+  width: 208px;
+  height: 81px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/main-logo-1.png); }
 
 .flex {
   display: -webkit-flex;
@@ -848,12 +843,14 @@ footer.main-foot .copyrights {
       letter-spacing: 0.5px;
       line-height: 12px;
       font-size: 14px; }
-  header.main-head .head-tel .rel-sf, footer.main-foot .head-tel .rel-sf {
-    font-size: 18px;
-    margin-bottom: 1px; }
-  header.main-head .head-tel a.head-cta, footer.main-foot .head-tel a.head-cta {
-    font-size: 16px;
-    padding: 5px; }
+  header.main-head, footer.main-foot {
+    padding: 15px 15px 0; }
+    header.main-head .head-tel .rel-sf, footer.main-foot .head-tel .rel-sf {
+      font-size: 18px;
+      margin-bottom: 1px; }
+    header.main-head .head-tel a.head-cta, footer.main-foot .head-tel a.head-cta {
+      font-size: 16px;
+      padding: 5px; }
   section.buy-now-sect .thumbnail {
     width: 150px; }
   section.buy-now-sect .about-and-buy {
@@ -968,13 +965,4 @@ footer.main-foot .copyrights {
     margin-bottom: 10px; }
   section.counter .counter-wrap .counter-box .count-desc {
     font-size: 10px;
-    padding: 0 5px; }
-  section.po-russ .col-2 h2 {
-    font-size: 17px;
-    padding-top: 30px; }
-  section.form-and-call .form input {
-    width: 60%;
-    font-size: 14px;
-    margin: 10px auto; }
-  section.form-and-call .form button.home-cta {
-    font-size: 18px; } }
+    padding: 0 5px; } }
